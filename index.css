@@ -1,0 +1,305 @@
+body {
+  background: #ffcc00;
+}
+
+.logo {
+    padding-top: 30px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.icons > i {
+    display: flex;
+    background-color: #433A12;
+    width: 30px;
+    height: 30px;
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: #ffcc00;
+    margin-left: 10px;
+    
+} 
+
+.icons > i:hover {
+    background-color: #000000;
+}
+
+@media (max-width: 767px) {
+    .logo {
+      display: flex;
+      justify-content: center;
+    }
+    .icons {
+      margin-top: 20px;
+      justify-content: center;
+    }
+  }
+
+.navbar {
+    margin-top: 30px;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.container-fluid{
+    padding: 0px 0px 0px 0px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    background-color: #2F2F2F;
+    color: #ffffff;
+    box-shadow: 0 0 8px 4px inset #000000;
+  }
+  
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    background-color: #2F2F2F;
+    color: #ffffff;
+    box-shadow: 0 0 8px 4px inset #000000;
+}
+
+.navbar-nav {
+    flex-wrap: wrap;
+}
+  
+.nav-link {
+    padding: 20px 20px;
+    transition: all 0.2s;
+    /*text-transform: uppercase;*/
+}
+
+#carouselExampleIndicators {
+  margin-bottom: 70px;
+}
+
+.carousel-indicators {
+    bottom: -60px;
+}
+
+.carousel-indicators > li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    background-color: white;
+    opacity:1;
+}
+
+.carousel-indicators > li.active {
+    background-color: black;
+}
+
+
+.darkbox {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
+  
+.innerbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.darkbox h2 {
+    font-family: 'League Gothic';
+    color: white;
+    border-top: solid 3px #fff;
+    border-bottom: solid 1px #999;
+    margin: 0;
+    padding: 9px 0;
+}
+
+.darkbox p {
+    color: white;
+    text-align: center;
+    border-bottom: solid 3px #fff;
+    margin: 0;
+    padding: 5px 0;
+}
+  
+@font-face {
+    font-family: "League Gothic";
+    src: url("LeagueGothic-Regular.otf") format("opentype");
+}
+
+h3 {
+  font-family: 'League Gothic';
+}
+
+.events {
+  background: white;
+}
+
+footer {
+  padding: 30px;
+  /* background-color: #353535;
+  background-image: url(./bg-footer.png);
+  background-repeat: no-repeat;
+  background-position: bottom right; */
+
+  background: #353535 url(./bg-footer.png) no-repeat bottom right;
+  margin-top: 70px;
+  color: white;
+}
+
+.media .media-card {
+  background-color: white;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.media-card img {
+  width: 100%;
+}
+.media-card {
+  position: relative;
+}
+.media-card::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  width: 48px;
+  height: 36px;
+  background: url(./icon_photo.png) no-repeat right bottom;
+}
+.title {
+  margin-top: 4px;
+  margin-bottom: 2px;
+  font-size: 12px;
+  color: #000;
+  font-weight: bold;
+}
+.subtitle {
+  margin: 2px 0;
+  font-size: 12px;
+  color: #999;
+}
+button {
+  background: #ffcc00;
+  border: none;
+  padding: 4px 12px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.media-card button:hover {
+  color: #ffcc00;
+  background: #333;
+}
+.media-card a {
+  position: relative;
+  display: block;
+}
+.media-card a::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(./icon_zoom.png) no-repeat center center;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.media-card a:hover::after {
+  opacity: 1;
+}
+.event, .album {
+  display: flex;
+  background: linear-gradient(#fff, #eee);
+}
+.date {
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.event:nth-child(even) .date {
+  background: #444;
+}
+.date {
+  color: #fff;
+  width: 50px;
+}
+.date .day,
+.date .year {
+  font-family: 'League Gothic';
+}
+.date .day {
+  font-size: 24px;
+}
+.date .month {
+  color: #ddd;
+  font-size: 10px;
+}
+.event .content {
+  padding: 8px 15px;
+}
+
+.news {
+  background: #fff;
+}
+.news img {
+  width: 100%;
+}
+.news .title {
+  font-size: 30px;
+  border-bottom: solid 1px #ffcc00;
+}
+.news .content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.news .tags {
+  margin: 10px 0;
+  border-top: solid 3px #eee;
+  border-bottom: solid 3px #eee;
+  padding: 5px 0;
+  width: 100%;
+}
+.news .cover {
+  position: relative;
+}
+.news .date {
+  position: absolute;
+  bottom: -6px;
+  left: 30px;
+  border-bottom: solid 6px #ffcc00;
+}
+.album .content {
+  padding: 15px;
+}
+.album {
+  justify-content: space-between;
+  align-items: center;
+}
+button.play {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  background: url(icon_playback.png);
+  transition: none;
+}
+button.play.playing {
+  background-position: 0 -30px;
+}
