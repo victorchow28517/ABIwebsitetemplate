@@ -1,0 +1,204 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1' crossorigin='anonymous')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' integrity='sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==' crossorigin='anonymous')
+  link(rel='stylesheet', href='/stylesheets/index.css')
+.container
+  .row
+    .col-12.col-md-6.logo
+      img(src='acoustic_logo.png')
+    .col-12.col-md-6.icons
+      i.fab.fa-facebook-f
+      i.fab.fa-twitter
+      i.fab.fa-dribbble
+      i.fab.fa-soundcloud
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    .container-fluid
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.me-auto.mb-2.mb-lg-0
+          li.nav-item.dropdown.active
+            // default active
+            a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+              | HOMEPAGE
+            ul.dropdown-menu(aria-labelledby='navbarDropdown')
+              li
+                a.dropdown-item(href='#') Homgpage Alt 1
+              li
+                a.dropdown-item(href='#') Homgpage Alt 2
+              // <li><hr class="dropdown-divider"></li>
+              li
+                a.dropdown-item(href='#') Homgpage Alt 3
+          li.nav-item
+            a.nav-link(href='#') NEWS
+          li.nav-item
+            a.nav-link(href='#') SHOP
+          li.nav-item
+            a.nav-link(href='#') ARTISTS
+          li.nav-item
+            a.nav-link(href='#') DISCOGRAPHY
+          li.nav-item
+            a.nav-link(href='#') EVENTS
+          li.nav-item
+            a.nav-link(href='#') GALLERIES
+          li.nav-item
+            a.nav-link(href='#') VIDEOS
+          li.nav-item
+            a.nav-link(href='#') FULLWIDTH
+          li.nav-item
+            a.nav-link(href='#') CONTACT
+  #carouselExampleIndicators.carousel.slide(data-bs-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0')
+      li(data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1')
+      li(data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2')
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-100(src='s1-1200x540.jpg' alt='...')
+        .innerbox
+          .darkbox
+            h2 The Party Of Your Life
+            p Read more
+      .carousel-item
+        img.d-block.w-100(src='s2-1200x540.jpg' alt='...')
+        .innerbox
+          .darkbox
+            h2 PLAYING THE TRUMPET. EVERY FRIDAY @ JAZZPLACE
+            p Read more
+      .carousel-item
+        img.d-block.w-100(src='s3-1200x540.jpg' alt='...')
+        .innerbox
+          .darkbox
+            h2 THAT WAS THE BEST PERFORMANCE EVER
+            p Read more
+    //
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+      </a>
+  .media.row
+    .col-12
+      h3 LATEST MEDIA
+    .col-md-3
+      .media-card
+        a(href='#')
+          img(src='media_pic.jpg' alt='A man whispering')
+        p.title Burn Live
+        p.subtitle Tsuen Wan, Hong Kong
+        button Read More
+    .col-md-3
+      .media-card
+        a(href='#')
+          img(src='media_pic.jpg')
+        p.title Burn Live
+        p.subtitle Tsuen Wan, Hong Kong
+        button Read More
+    .col-md-3
+      .media-card
+        a(href='#')
+          img(src='media_pic.jpg')
+        p.title Burn Live
+        p.subtitle Tsuen Wan, Hong Kong
+        button Read More
+    .col-md-3
+      .media-card
+        a(href='#')
+          img(src='media_pic.jpg')
+        p.title Burn Live
+        p.subtitle Tsuen Wan, Hong Kong
+        button Read More
+  main.row
+    .col-md-3
+      h3 UPCOMING EVENTS
+      .events
+        .event
+          .date
+            span.day 30
+            span.month JAN
+            span.year 2021
+          .content
+            p.title APAP
+            p.subtitle Sheung Wan, Hong Kong
+            button Buy Now
+        .event
+          .date
+            span.day 30
+            span.month JAN
+            span.year 2021
+          .content
+            p.title APAP
+            p.subtitle Sheung Wan, Hong Kong
+            button Buy Now
+        .event
+          .date
+            span.day 30
+            span.month JAN
+            span.year 2021
+          .content
+            p.title APAP
+            p.subtitle Sheung Wan, Hong Kong
+            button Buy Now
+        .event
+          .date
+            span.day 30
+            span.month JAN
+            span.year 2021
+          .content
+            p.title APAP
+            p.subtitle Sheung Wan, Hong Kong
+            button Buy Now
+    .col-md-6
+      h3 LATEST NEWS
+      .news
+        .cover
+          .date
+            span.day 30
+            span.month JAN
+            span.year 2021
+          img(src='acoustic1-710x450.jpg')
+        .content
+          p.title The Interview
+          p.tags
+            | Filed Under: 
+            a(href='#') News
+          p
+            | In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis. Pellentesque eu est a nulla placerat dignissim. Morbi[&mldr;]
+    .col-md-3
+      h3 Latest album
+      .album
+        .content
+          p.title Nobody Move
+          p.subtitle Self-hosted audio
+        button.play
+      .album
+        .content
+          p.title Nobody Move
+          p.subtitle Self-hosted audio
+        button.play
+      .album
+        .content
+          p.title Nobody Move
+          p.subtitle Self-hosted audio
+        button.play
+      .album
+        .content
+          p.title Nobody Move
+          p.subtitle Self-hosted audio
+        button.play
+footer
+  .container
+    .row
+      .col-md-3 A
+      .col-md-3 A
+      .col-md-3 A
+      .col-md-3 A
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js' integrity='sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW' crossorigin='anonymous')
+script(src='index.js')
